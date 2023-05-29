@@ -1,0 +1,1199 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/YesevaOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1300px;
+  margin: 0px;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  height: 83px;
+  background-color: #131313;
+}
+
+.header-footer-content {
+  height: inherit;
+  width: 1300px;
+  margin: auto;
+  padding: 0px 22px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.logo {
+  width: 179.74px;
+  margin-right: 95.47px;
+  color: #e3b873;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+
+.nav-list__item:nth-child(-n + 5) {
+  margin-right: 47.09px;
+}
+
+.nav-list__item:nth-child(1) {
+  width: 40px;
+}
+
+.nav-list__item:nth-child(2) {
+  width: 58px;
+}
+
+.nav-list__item:nth-child(3) {
+  width: 94px;
+}
+
+.nav-list__item:nth-child(4) {
+  width: 34px;
+}
+
+.nav-list__item:nth-child(5) {
+  width: 53px;
+}
+
+.nav-list__item:nth-child(6) {
+  width: 67px;
+}
+
+.nav-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus {
+  color: #e3b873;
+}
+
+.tel {
+  width: 126px;
+  margin: auto 45px auto 67.36px;
+  color: #ffffff;
+  text-align: right;
+  text-decoration: none;
+}
+
+.tel:hover,
+.tel:focus {
+  color: #e3b873;
+  text-decoration: underline;
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e3b873;
+  border: none;
+  color: #ffffff;
+}
+
+.header-footer-content > .button {
+  width: 161px;
+  height: 37px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.header-footer-content > .button:hover,
+.button:focus {
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+
+.hero {
+  height: 707px;
+  padding-top: 194px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/image_4.3.png) center / cover no-repeat;
+}
+
+.hero-content {
+  width: 1300px;
+  height: 305px;
+  margin: 0px auto auto auto;
+  padding: 0px 64px 0px;
+}
+
+.hero-title {
+  height: 105px;
+  margin: 0px;
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.hero-title > span {
+  color: #e3b873;
+}
+
+.hero-text {
+  margin: 19px 0px 22px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.hero-content > .button {
+  width: 207px;
+  height: 51px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.hero-content > .button:hover,
+.button:focus {
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.hero-content > .button:first-of-type {
+  margin-right: 20px;
+}
+
+.projects {
+  height: 1074px;
+  padding-top: 107px;
+  background-color: #131313;
+}
+
+.projects-content {
+  width: 1300px;
+  height: 551px;
+  margin: 0px auto auto auto;
+  padding: 0px 64px 0px;
+  display: grid;
+  grid-template-columns: 190px 303px 679px;
+  grid-template-rows: 69px 228px 107px 107px 40px;
+  grid-template-areas:
+    "A A C"
+    "B B I"
+    "D E I"
+    "F G I"
+    "H H I";
+}
+
+.projects-title-area {
+  grid-area: B;
+  padding: 0px 40px 0px 0px;
+}
+
+.projects-title-area > .title {
+  letter-spacing: -0.07em;
+}
+
+.projects-links-area {
+  grid-area: C;
+}
+
+.projects-info-area1 {
+  grid-area: D;
+}
+
+.projects-info-area2 {
+  grid-area: E;
+}
+
+.projects-info-area3 {
+  grid-area: F;
+}
+
+.projects-info-area4 {
+  grid-area: G;
+}
+
+.projects-switch-area {
+  grid-area: H;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project-image-area {
+  grid-area: I;
+  background: url(../images/image_2.1.png) center / cover no-repeat;
+}
+
+.arrow-button-mobile {
+  display: none;
+}
+
+.title {
+  margin: 0px;
+  color: #e3b873;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.projects-text {
+  margin: 25px 0px 0px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.info-title {
+  margin: 0px;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projects-info-title {
+  color: #e3b873;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.projects-info-text {
+  margin: 9px 0px 0px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.arrow-button {
+  width: 41.46px;
+  height: 13.28px;
+  padding: 0;
+  background: url(../icons/arrow.svg) center / contain no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.projects-switch-area > button:nth-of-type(1) {
+  margin-right: 29.5px;
+  transform: rotate(180deg);
+}
+
+.projects-switch-area > button:nth-of-type(3) {
+  margin-left: 17.54px;
+  margin-right: 17.54px;
+}
+
+.projects-switch-area > button:nth-of-type(5) {
+  margin-left: 29.5px;
+}
+
+.dot-button {
+  width: 9.57px;
+  height: 9.57px;
+  margin-top: 1.855px;
+  margin-bottom: 1.855px;
+  padding: 0;
+  background: url(../icons/dot.svg) center / contain no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dot-button:hover,
+.dot-button:focus {
+  background-image: url(../icons/dot_active.svg);
+}
+
+.project-link {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.project-link:nth-child(-n + 2) {
+  margin-right: 57px;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: #e3b873;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+.online-control {
+  height: 1103px;
+  margin-top: -324px;
+}
+
+.online-control-content {
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px 241.5px 0px;
+}
+
+.subtitle__text {
+  margin: 0px;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle__text_white {
+  color: #ffffff;
+}
+
+.subtitle__text_black {
+  color: #181818;
+}
+
+.subtitle__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle__underline {
+  width: 32px;
+  height: 1.54px;
+  margin: 25px 0px;
+  background-color: #e3b873;
+  border-radius: 30px;
+}
+
+.subtitle__icon {
+  width: 33.72px;
+  height: 28px;
+  margin: 0px 8.14px;
+  background: center / contain no-repeat;
+}
+
+.subtitle__icon_cam {
+  background-image: url(../icons/cam.svg);
+}
+
+.subtitle__icon_tools {
+  background-image: url(../icons/tools.svg);
+}
+
+.subtitle__icon_hands {
+  background-image: url(../icons/hands.svg);
+}
+
+.video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 817px;
+  height: 434px;
+  margin: 19.64px auto auto;
+  filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/image_6.png) center / cover no-repeat #181818;
+}
+
+.play-button {
+  width: 85px;
+  height: 85px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.play-button:hover,
+.play-button:focus {
+  background-color: #e3b873;
+  border: none;
+  box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+}
+
+.play-button-triangle-mobile {
+  display: none;
+}
+
+.line {
+  width: 55px;
+  height: 1.54px;
+  margin: 62.5px auto 29px;
+  background-color: #e3b873;
+  border: none;
+  border-radius: 30px;
+}
+
+.online-control-text {
+  margin: 0px 80px 80px;
+  color: #363636;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.online-control-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.online-control-form > label:nth-of-type(2) {
+  margin: 0px 49px 0px 58px;
+}
+
+.online-control-form > label:nth-of-type(3) {
+  margin: 33.24px 0px 0px;
+}
+
+.input-label {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.input-label-gray {
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.input-label-white {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  padding: 0px 0px 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input-narrow {
+  width: 231px;
+}
+
+.input-wide {
+  width: 408px;
+}
+
+.input-extra-wide {
+  width: 520px;
+}
+
+.input-gray {
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.input-white {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.input-gray::-webkit-input-placeholder {
+  color: #363636;
+}
+
+.input-white::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.input:-moz-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.input-gray:-moz-placeholder {
+  color: #363636;
+}
+
+.input-white:-moz-placeholder {
+  color: #ffffff;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.input-gray:-ms-input-placeholder {
+  color: #363636;
+}
+
+.input-white:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.online-control-form > .button {
+  width: 200px;
+  height: 51px;
+  font-size: 13px;
+}
+
+.online-control-form > .button:hover,
+.button:focus {
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+}
+
+.checkbox-label {
+  width: 287px;
+  height: 21px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.checkbox-label-gray {
+  color: #181818;
+}
+
+.checkbox-label-white {
+  color: #ffffff;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox ~ span {
+  display: flex;
+  cursor: pointer;
+}
+
+.checkbox + span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin: 0px 8.62px 3px 0px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 1px;
+  background: center / auto no-repeat;
+}
+
+.checkbox-gray + span::before {
+  border-color: rgba(54, 54, 54, 0.5);
+}
+
+.checkbox-white + span::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox:checked + span::before {
+  border-color: #e3b873;
+  background-color: #e3b873;
+  background-image: url("../icons/checkmark.svg");
+}
+
+.checkbox:not(:checked) + span:hover::before {
+  background-color: #e3b873;
+}
+
+.checkbox:focus + span::before {
+  background-color: #e3b873;
+}
+
+.checkbox-gray:focus + span::before {
+  border-color: rgba(54, 54, 54, 0.5);
+}
+
+.checkbox-white:focus + span::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.types-of-repair {
+  height: 2772px;
+  background: url(../images/image_6.1.png) 0% 39.1% / 48.82% no-repeat;
+}
+
+.types-of-repair-content {
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px 30px;
+}
+
+.types-of-repair-cards {
+  margin: 19.46px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.repair-card {
+  position: relative;
+  width: 392px;
+  height: 608px;
+  padding: 294px 31px 0px;
+  background: top left / contain no-repeat;
+}
+
+.repair-card_redecorating {
+  background-image: url(../images/repair_card_image_1.png);
+}
+
+.repair-card_oferhaul {
+  background-image: url(../images/repair_card_image_2.png);
+}
+
+.repair-card_designer-repair {
+  background-image: url(../images/repair_card_image_3.png);
+}
+
+.repair-card__info {
+  width: 330px;
+  height: 286px;
+  padding: 23px 32px 0px 31px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.repair-card__info-title {
+  margin: 0px;
+  color: #363636;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.repair-card__info-list {
+  list-style: none;
+  margin: 0px;
+  padding: 7px 0px 0px;
+  color: #959595;
+  font-size: 13px;
+  line-height: 27px;
+}
+
+.repair-card__info-list > li::before {
+  content: "• ";
+}
+
+.repair-card__price {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 54px;
+  background-color: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.measurement-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.measure {
+  margin: 124px auto auto 0px;
+  padding: 109.22px 0px 0px 141px;
+}
+
+.measure-item {
+  display: flex;
+  align-items: center;
+}
+
+.measure-item:nth-of-type(-n + 3) {
+  margin: 0px 0px 86.24px;
+}
+
+.measure-item__circle {
+  width: 57.76px;
+  height: 57.76px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #ffffff;
+  border-radius: 30px;
+  background-color: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.measure-item__text {
+  margin: 0px 0px 0px 9.05px;
+  color: #363636;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.measure-form {
+  width: 506px;
+  height: 509px;
+  margin: 230px 0px 38.44px auto;
+  padding: 0px 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/waves.svg) center / cover no-repeat #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.measure-form > p {
+  margin: 28px auto 39px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.measure-form > label:nth-of-type(-n + 2) {
+  margin-bottom: 48px;
+}
+
+.measure-form > label:nth-of-type(3) {
+  margin-bottom: 16px;
+}
+
+.measure-form > label:nth-of-type(4) {
+  margin-bottom: 39px;
+  align-self: flex-start;
+}
+
+.measure-form > .button {
+  width: 213px;
+  height: 51px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 13px;
+  align-self: flex-end;
+}
+
+.measure-form > .button:hover,
+.button:focus {
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.piggy-bank {
+  margin: 0px 32.5px 242.09px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.piggy-bank__circle {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  border-radius: 50%;
+  background: url(../icons/piggy_bank.svg) center / auto no-repeat #e3b873;
+  box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+}
+
+.piggy-bank__text {
+  width: 344px;
+  margin: 0px 0px 0px 25px;
+  color: #e3b873;
+  font-size: 18px;
+  line-height: 26px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.mobile-title {
+  display: none;
+}
+
+.fantasies-image-mobile {
+  display: none;
+}
+
+.fantasies-background {
+  height: 864px;
+  background: linear-gradient(
+      109.8deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../images/image_5.1.png) center / cover no-repeat;
+}
+
+.fantasies-background > div {
+  display: flex;
+}
+
+.fantasies {
+  margin: 137px auto auto 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fantasies-link {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 38px;
+  text-decoration: none;
+}
+
+.fantasies-link:first-of-type {
+  margin-top: 38px;
+}
+
+.fantasies-link:nth-of-type(-n + 10) {
+  margin-bottom: 11px;
+}
+
+.fantasies-link:hover,
+.fantasies-link:focus {
+  color: #e3b873;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.fantasies-images {
+  width: 800px;
+  height: 1020px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  gap: 38px 43px;
+  margin: -112.53px 0px auto auto;
+}
+
+.fantasies-image {
+  width: 354px;
+  background: center / cover no-repeat #c4c4c4;
+}
+
+.fantasies-image-1 {
+  margin-top: 72px;
+  height: 557px;
+  background-image: url(../images/fantasies_image_1.png);
+}
+
+.fantasies-image-2 {
+  height: 350px;
+  background-image: url(../images/fantasies_image_2.png);
+}
+
+.fantasies-image-3 {
+  height: 275px;
+  background-image: url(../images/fantasies_image_3.png);
+}
+
+.fantasies-image-4 {
+  height: 625px;
+  background-image: url(../images/fantasies_image_4.png);
+}
+
+.our-clients {
+  height: 1020px;
+}
+
+.our-clients-content {
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px 30px;
+}
+
+.our-clients-text {
+  margin: 10px auto 42px;
+  color: #363636;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.our-clients-cards {
+  margin: 0px 0px -105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-card {
+  position: relative;
+  width: 376px;
+  height: 428px;
+  padding: 24px 31px 0px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.client-card__title-block {
+  display: flex;
+  align-items: center;
+  margin: 0px auto 20px 0px;
+}
+
+.client-card__photo {
+  width: 76px;
+  height: 76px;
+  margin: 0px 23px 0px 0px;
+  padding: 0;
+  border-radius: 50%;
+  background: center / cover no-repeat #ffffff;
+}
+
+.client-card__photo_fedosova {
+  background-image: url(../images/client_card_image_fedosova.png);
+}
+
+.client-card__photo_afanasyev {
+  background-image: url(../images/client_card_image_afanasyev.png);
+}
+
+.client-card__photo_kiriev {
+  background-image: url(../images/client_card_image_kiriev.png);
+}
+
+.client-card__info-title {
+  color: #181818;
+  line-height: 23px;
+}
+
+.client-card__info-text {
+  margin: 7px 0px 0px;
+  color: #959595;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.client-card__decal {
+  position: absolute;
+  left: 0px;
+  bottom: -27px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 293.75px;
+  height: 54px;
+  background: url(../icons/square.svg) 17.36px center / auto no-repeat,
+    url(../icons/period.svg) 152.35px center / auto no-repeat,
+    linear-gradient(
+      90deg,
+      #e3b873 135.09px,
+      #ffffff 135.09px 135.84px,
+      #e3b873 135.84px
+    );
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.client-card__decal-square {
+  width: 65px;
+  margin: 0px auto 0px 65.1px;
+}
+
+.client-card__decal-period {
+  width: 87px;
+  margin: 0px 7.1px 0px auto;
+}
+
+.our-clients-background-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.our-clients-background {
+  width: calc(50% + 9px);
+  height: 505.43px;
+  background: 100% 100% / auto repeat-x;
+  opacity: 0.05;
+}
+
+.our-clients-background-left {
+  background-image: url(../images/city.svg);
+  margin: 0px -9px 0px auto;
+}
+
+.our-clients-background-right {
+  background-image: url(../images/city.svg);
+  margin: 0px auto 0px -9px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.contacts {
+  height: 1176.66px;
+}
+
+.contacts-content {
+  position: relative;
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px 187.5px;
+  z-index: 1;
+}
+
+.contacts-form {
+  width: 883px;
+  height: 445.32px;
+  margin: -242px auto auto;
+  padding: 32px 180px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: #181818;
+}
+
+.contacts-form-subtitle {
+  margin: 0px 140px 44px;
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-form > label {
+  margin-bottom: 47px;
+}
+
+.contacts-form > label:first-of-type {
+  margin-right: 58px;
+}
+
+.contacts-form > label:last-of-type {
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+.contacts-form > .button {
+  width: 200px;
+  height: 51px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.contacts-form > .button:hover,
+.button:focus {
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+}
+
+.contacts-background {
+  height: 954px;
+  margin: -222.66px 0px 0px;
+  padding: 272px 0px 0px;
+  background: linear-gradient(
+      180deg,
+      rgba(24, 24, 24, 0.9) 3.47%,
+      rgba(24, 24, 24, 0.72) 100%
+    ),
+    url(../images/image_7.2.png) center / cover no-repeat #181818;
+}
+
+.contacts-subtitle {
+  margin: 0px 180px;
+  color: #e3b873;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-subtitle > br {
+  display: none;
+}
+
+.contacts-icons-block {
+  margin: 24px auto 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  background: center / auto no-repeat #e3b873;
+}
+
+.contacts-icon_mail {
+  margin-right: 15px;
+  background-image: url(../icons/mail.svg);
+}
+
+.contacts-icon_instagram {
+  background-image: url(../icons/instagram.svg);
+}
+
+.map {
+  width: 925px;
+  height: 465px;
+  margin: 0px auto;
+  background: url(../images/image_7.1.png) center / cover no-repeat;
+}
+
+.footer {
+  height: 133px;
+  background-color: #131313;
+}

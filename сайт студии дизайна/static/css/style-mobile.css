@@ -1,0 +1,691 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/YesevaOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+  margin: 0px;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  height: 57px;
+  background-color: #181818;
+}
+
+.header-footer-content {
+  height: inherit;
+  width: 375px;
+  margin: auto;
+  padding: 0px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.logo {
+  width: 176px;
+  color: #e3b873;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: none;
+}
+
+.tel {
+  width: 107px;
+  color: #ffffff;
+  text-align: right;
+  text-decoration: none;
+}
+
+.tel:hover,
+.tel:focus {
+  color: #e3b873;
+  text-decoration: underline;
+}
+
+.button {
+  width: 339px;
+  height: 51px;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.header-footer-content > .button {
+  display: none;
+}
+
+.hero {
+  height: 476px;
+  padding-top: 82px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/image_4.3.png) center / cover no-repeat;
+}
+
+.hero-content {
+  width: 375px;
+  height: 340px;
+  margin: 0px auto auto;
+  padding: 0px 18px;
+}
+
+.hero-title {
+  height: 60px;
+  margin: 0px;
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.hero-title > span {
+  color: #e3b873;
+}
+
+.hero-text {
+  margin: 18px 0px 69px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.hero-content > .button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.hero-content > .button:hover,
+.button:focus {
+  background-color: #e3b873;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.hero-content > .button:first-of-type {
+  margin-bottom: 26px;
+}
+
+.projects {
+  height: 724px;
+  padding-top: 34px;
+  background-color: #181818;
+}
+
+.projects-content {
+  width: 375px;
+  height: 650px;
+  margin: 0px auto auto;
+  padding: 0px 18px;
+  display: grid;
+  grid-template-columns: 160px 179px;
+  grid-template-rows: 211px 241px 95px 95px;
+  grid-template-areas:
+    "A A"
+    "B B"
+    "C D"
+    "E F";
+}
+
+.projects-title-area {
+  grid-area: A;
+  text-align: center;
+}
+
+.projects-title-area > .title {
+  letter-spacing: -0.07em;
+}
+
+.projects-links-area {
+  display: none;
+}
+
+.projects-info-area1 {
+  grid-area: C;
+}
+
+.projects-info-area2 {
+  grid-area: D;
+}
+
+.projects-info-area3 {
+  grid-area: E;
+}
+
+.projects-info-area4 {
+  grid-area: F;
+}
+
+.projects-switch-area {
+  display: none;
+}
+
+.project-image-area {
+  grid-area: B;
+  padding: 0px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../images/image_2.png) center / cover no-repeat;
+}
+
+.arrow-button-mobile {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: url(../icons/arrow_mobile.svg) center / auto no-repeat #e3b873;
+  cursor: pointer;
+}
+
+.project-image-area > .arrow-button-mobile:nth-of-type(1) {
+  transform: rotate(180deg);
+}
+
+.title {
+  margin: 0px;
+  color: #e3b873;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.projects-text {
+  margin: 29px 0px 0px;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 17px;
+}
+
+.info-title {
+  margin: 0px;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.projects-info-title {
+  margin: 37px 0px 0px;
+  color: #e3b873;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.projects-info-text {
+  margin: 12px 0px 0px;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.online-control {
+  height: 829px;
+  margin-top: 0px;
+  background-color: #181818;
+}
+
+.online-control-content {
+  width: 375px;
+  margin: 0px auto auto;
+  padding: 0px 18px;
+}
+
+.subtitle__text {
+  margin: 0px;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle__text_white {
+  color: #ffffff;
+}
+
+.subtitle__text_black {
+  color: #181818;
+}
+
+.subtitle__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle__underline {
+  width: 32px;
+  height: 1.54px;
+  margin: 31px 0px;
+  background-color: #e3b873;
+  border-radius: 30px;
+}
+
+.subtitle__icon {
+  width: 33.72px;
+  height: 28px;
+  margin: 0px 8.14px;
+  background: center / contain no-repeat;
+}
+
+.subtitle__icon_cam {
+  background-image: url(../icons/cam.svg);
+}
+
+.subtitle__icon_tools {
+  background-image: url(../icons/tools.svg);
+}
+
+.video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 339px;
+  height: 207px;
+  margin: 23px auto auto;
+  box-shadow: 0px 20px 30px rgba(24, 24, 24, 0.1);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/image_6_mobile.png) center / cover no-repeat #181818;
+}
+
+.play-button {
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.play-button:hover,
+.play-button:focus {
+  background-color: #e3b873;
+  border: none;
+  box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+}
+
+.play-button-triangle {
+  display: none;
+}
+
+.line {
+  width: 55px;
+  height: 1.54px;
+  margin: 28px auto 20px;
+  background-color: #e3b873;
+  border: none;
+  border-radius: 30px;
+}
+
+.online-control-text {
+  margin: 0px auto 73px;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.online-control-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.online-control-form > label:nth-of-type(1) {
+  margin: 0px 0px 61px;
+}
+
+.online-control-form > label:nth-of-type(3) {
+  order: 1;
+  align-self: flex-start;
+  margin: 26px 0px 60px;
+}
+
+.input-label {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  width: 339px;
+  padding: 0px 0px 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.input:-moz-placeholder {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.input:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.online-control-form > .button {
+  order: 2;
+  background-color: #e3b873;
+  border: none;
+  color: #ffffff;
+  font-size: 13px;
+  box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+}
+
+.checkbox-label {
+  width: 287px;
+  height: 21px;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox ~ span {
+  display: flex;
+  cursor: pointer;
+}
+
+.checkbox + span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin: 0px 8.62px 3px 0px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+  background: center / auto no-repeat;
+}
+
+.checkbox:checked + span::before {
+  border-color: #e3b873;
+  background-color: #e3b873;
+  background-image: url("../icons/checkmark.svg");
+}
+
+.checkbox:not(:checked) + span:hover::before {
+  background-color: #e3b873;
+}
+
+.checkbox:focus + span::before {
+  background-color: #e3b873;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.types-of-repair {
+  position: relative;
+  height: 1949px;
+  z-index: 1;
+}
+
+.types-of-repair-content {
+  width: 375px;
+  margin: 81px auto auto;
+  padding: 0px 18px;
+}
+
+.types-of-repair-cards {
+  margin: 19.46px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+
+.repair-card {
+  position: relative;
+  width: 339px;
+  height: 484px;
+  padding: 223px 0px 0px;
+  background: top left / contain no-repeat;
+}
+
+.repair-card_redecorating {
+  background-image: url(../images/repair_card_image_1.png);
+}
+
+.repair-card_oferhaul {
+  background-image: url(../images/repair_card_image_2_mobile.png);
+}
+
+.repair-card_designer-repair {
+  background-image: url(../images/repair_card_image_3.png);
+}
+
+.repair-card__info {
+  width: 270px;
+  height: 241px;
+  padding: 20px 32px 0px 31px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.repair-card__info-title {
+  margin: 0px;
+  color: #363636;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.repair-card__info-list {
+  list-style: none;
+  margin: 0px;
+  padding: 9px 0px 0px;
+  color: #959595;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.repair-card__info-list > li::before {
+  content: "• ";
+}
+
+.repair-card__price {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190.43px;
+  height: 40px;
+  background-color: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.measurement-service {
+  display: none;
+}
+
+.mobile-title {
+  margin: 53px auto 32px;
+  text-align: center;
+}
+
+.fantasies-background {
+  display: none;
+}
+
+.fantasies-image-mobile {
+  width: 339px;
+  height: 242px;
+  padding: 0px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../images/image_5.3.png) center / cover no-repeat #c4c4c4;
+}
+
+.fantasies-image-mobile > .arrow-button-mobile:nth-of-type(1) {
+  transform: rotate(180deg);
+}
+
+.our-clients {
+  display: none;
+}
+
+.contacts {
+  height: 1197px;
+  padding-top: 171px;
+  background-color: #181818;
+}
+
+.contacts-content {
+  width: 375px;
+  margin: 0px auto auto;
+  padding: 0px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts-form-subtitle {
+  margin: 0px auto 50px;
+  color: #ffffff;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-form > label:nth-of-type(-n + 2) {
+  margin: 0px 0px 61px;
+}
+
+.contacts-form > label:nth-of-type(4) {
+  align-self: flex-start;
+  margin: 22px 0px 64px;
+}
+
+.contacts-form > .button {
+  background-color: #e3b873;
+  border: none;
+  color: #ffffff;
+  font-size: 13px;
+  box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+}
+
+.contacts-subtitle {
+  margin: 39px auto 0px;
+  color: #e3b873;
+  font-family: "Yeseva One", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-icons-block {
+  margin: 22px auto 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-icon {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border-radius: 50%;
+  background: center / 55% no-repeat #e3b873;
+}
+
+.contacts-icon_mail {
+  margin-right: 21px;
+  background-image: url(../icons/mail.svg);
+}
+
+.contacts-icon_instagram {
+  background-image: url(../icons/instagram.svg);
+}
+
+.map {
+  order: -1;
+  width: 339px;
+  height: 255px;
+  margin: 46px auto auto;
+  background: url(../images/image_7.1_mobile.png) center / cover no-repeat;
+}
+
+.footer {
+  display: none;
+}
