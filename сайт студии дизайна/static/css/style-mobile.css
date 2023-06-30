@@ -197,7 +197,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url(../images/image_2.png) center / cover no-repeat;
+  background:  center / cover no-repeat;
+  background-image: url(../images/image_2.png);
 }
 
 .arrow-button-mobile {

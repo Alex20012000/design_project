@@ -254,7 +254,8 @@ body {
 
 .project-image-area {
   grid-area: I;
-  background: url(../images/image_2.1.png) center / cover no-repeat;
+  background: center / cover no-repeat;
+  background-image: url(../images/image_2.1.png);
 }
 
 .arrow-button-mobile {
@@ -296,6 +297,7 @@ body {
   color: #ffffff;
   font-size: 13px;
   line-height: 21px;
+  width: 100px;
 }
 
 .arrow-button {
@@ -333,7 +335,8 @@ body {
 }
 
 .dot-button:hover,
-.dot-button:focus {
+.dot-button:focus,
+.dot-button-active {
   background-image: url(../icons/dot_active.svg);
 }
 
@@ -351,7 +354,8 @@ body {
 }
 
 .project-link:hover,
-.project-link:focus {
+.project-link:focus,
+.project-link-active {
   color: #e3b873;
   text-decoration: underline;
   text-decoration-thickness: 1px;
